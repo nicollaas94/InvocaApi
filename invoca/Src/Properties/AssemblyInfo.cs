@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Invoca")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("InvocaApi")]
+[assembly: AssemblyDescription("Help to comunicate with Invoca API")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Invoca")]
+[assembly: AssemblyProduct("InvocaApi")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
