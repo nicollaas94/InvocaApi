@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invoca", "Src\Invoca.csproj", "{B3A7B97D-947E-4B0B-933F-3FDAD9224DC5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invoca", "Invoca\Invoca.csproj", "{B3A7B97D-947E-4B0B-933F-3FDAD9224DC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvocaSample", "InvocaSample\InvocaSample.csproj", "{B2562ABF-90F0-4ACE-8D06-219EF271BAAA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvocaSample", "..\InvocaSample\InvocaSample.csproj", "{B2562ABF-90F0-4ACE-8D06-219EF271BAAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invoca.Model", "Invoca.Model\Invoca.Model.csproj", "{F4D97D43-FE5D-4D22-B2A7-C8E580FAAB1C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{B2562ABF-90F0-4ACE-8D06-219EF271BAAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2562ABF-90F0-4ACE-8D06-219EF271BAAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2562ABF-90F0-4ACE-8D06-219EF271BAAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4D97D43-FE5D-4D22-B2A7-C8E580FAAB1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4D97D43-FE5D-4D22-B2A7-C8E580FAAB1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4D97D43-FE5D-4D22-B2A7-C8E580FAAB1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4D97D43-FE5D-4D22-B2A7-C8E580FAAB1C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

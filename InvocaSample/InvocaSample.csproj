@@ -49,7 +49,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Src\Invoca.csproj">
+    <ProjectReference Include="..\Src\Invoca.Model\Invoca.Model.csproj">
+      <Project>{f4d97d43-fe5d-4d22-b2a7-c8e580faab1c}</Project>
+      <Name>Invoca.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Src\Invoca\Invoca.csproj">
       <Project>{b3a7b97d-947e-4b0b-933f-3fdad9224dc5}</Project>
       <Name>Invoca</Name>
     </ProjectReference>

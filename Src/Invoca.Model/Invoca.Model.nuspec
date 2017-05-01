@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Nicollas.Invoca.TransactionApi</id>
-    <version>0.0.0-alfa</version>
+    <id>Invoca.Model</id>
+    <version>0.1.0-beta</version>
     <title>$title$</title>
     <authors>Nicollas Braga</authors>
     <owners>Nicollas Braga</owners>
@@ -10,8 +10,8 @@
     <projectUrl>https://github.com/nicollaas94/InvocaApi</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>Implement basic Invoca Transaction API</releaseNotes>
+    <releaseNotes>Implement basic models for query and response of Invoca</releaseNotes>
     <copyright>Copyright 2017</copyright>
-    <tags>Invoca InvocaApi Transaction InvocaTransaction</tags>
+    <tags>Invoca InvocaApi Model InvocaModel</tags>
   </metadata>
 </package>
