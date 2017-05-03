@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Invoca.Core.Exceptions
 {
-    class InvalidArgumentException : Exception
+    public class InvalidArgumentException : Exception
     {
         public InvalidArgumentException()
         {

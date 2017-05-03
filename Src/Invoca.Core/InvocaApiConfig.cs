@@ -9,8 +9,11 @@ namespace Invoca.Core
     public class InvocaApiConfig
     {
         private const string WSDL_PRODUCTION = "invoca.net/api";
-
-        public Uri Url { get { return new Uri($"https://{Subdomain}.{WSDL_PRODUCTION}/{Version}/"); } }
+        
+        public Uri Url(bool haveSubdomain = false)
+        {
+            return new Uri($"https://{(haveSubdomain? Subdomain + ".":"")}{WSDL_PRODUCTION}/{Version}/");
+        }
 
         /// <summary>
         /// Invoca Network Id

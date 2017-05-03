@@ -5,16 +5,14 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Invoca.Core")]
+[assembly: AssemblyTitle("Invoca")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Invoca.Core")]
+[assembly: AssemblyProduct("Invoca")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
-[assembly: InternalsVisibleTo("Invoca.Transaction")]
-[assembly: InternalsVisibleTo("Invoca.Network")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
 // to COM components.  If you need to access a type in this assembly from
@@ -22,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("feb5cba2-68ff-441d-be1f-6751039cc999")]
+[assembly: Guid("81c1511a-e224-4949-896a-1c6810d21329")]
 
 // Version information for an assembly consists of the following four values:
 //

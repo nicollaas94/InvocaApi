@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvocaSample", "..\InvocaSa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invoca.Core", "Invoca.Core\Invoca.Core.csproj", "{FEB5CBA2-68FF-441D-BE1F-6751039CC999}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invoca.Network", "Invoca.Network\Invoca.Network.csproj", "{AC94AF49-F1ED-4D3D-92D1-3E19DC358E17}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{FEB5CBA2-68FF-441D-BE1F-6751039CC999}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEB5CBA2-68FF-441D-BE1F-6751039CC999}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEB5CBA2-68FF-441D-BE1F-6751039CC999}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC94AF49-F1ED-4D3D-92D1-3E19DC358E17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC94AF49-F1ED-4D3D-92D1-3E19DC358E17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC94AF49-F1ED-4D3D-92D1-3E19DC358E17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC94AF49-F1ED-4D3D-92D1-3E19DC358E17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

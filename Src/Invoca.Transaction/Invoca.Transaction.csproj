@@ -7,8 +7,8 @@
     <ProjectGuid>{B3A7B97D-947E-4B0B-933F-3FDAD9224DC5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Invoca</RootNamespace>
-    <AssemblyName>Invoca</AssemblyName>
+    <RootNamespace>Invoca.Transaction</RootNamespace>
+    <AssemblyName>Invoca.Transaction</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -43,11 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Services\AdvertiserService.cs" />
-    <Compile Include="Services\AffiliateService.cs" />
+    <Compile Include="Services\TransactionService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\NetworksService.cs" />
-    <Compile Include="Client\InvocaClient.cs" />
+    <Compile Include="Client\InvocaTransactionClient.cs" />
     <Compile Include="Client\InvocaClientMock.cs" />
     <Compile Include="Client\InvocaClientFactory.cs" />
   </ItemGroup>

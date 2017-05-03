@@ -3,7 +3,7 @@ using Invoca.Core.Client;
 using Invoca.Core.Services;
 using System;
 
-namespace Invoca.Transaction.Client
+namespace Invoca.Network.Client
 {
     class InvocaClientFactory
     {
@@ -14,13 +14,13 @@ namespace Invoca.Transaction.Client
             if (config.Mode == InvocaApiMode.Production)
                 return Create<T>(service);
             else if (config.Mode == InvocaApiMode.Development)
-                return new InvocaSoapClientMock<T>();
-            return new InvocaSoapClientMock<T>();
+                return new InvocaNetworkClientMock<T>();
+            return new InvocaNetworkClientMock<T>();
         }
 
         private static IInvocaClient<T> Create<T>(IInvocaService service) where T : new()
         {
-            return new InvocaTransactionClient<T>(service);
+            return new InvocaNetworkClient<T>(service);
         }
 
         private static IInvocaClient<T> CreateMock<T>() where T : new()

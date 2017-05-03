@@ -1,5 +1,6 @@
 ﻿using Invoca.Core;
 using Invoca.Core.Model;
+using Invoca.Network.Services;
 using Invoca.Transaction.Services;
 
 namespace InvocaSample
@@ -21,9 +22,13 @@ namespace InvocaSample
             var param = new QueryParameters();
             param.SetExcludeColumns("calling_phone_number", "recording");
             param.SetLimit(50);
-            var network = new NetworksService().GetNetwork(param).Execute().ObjectResult;
-            var advertiser = new AdvertiserService().GetAdvertiser(param).Execute().ObjectResult;
-            var affiliate = new AffiliateService().GetAffiliate(param).Execute().ObjectResult;
+            //var service = new TransactionService();
+            //var network = service.GetNetwork(param).Execute().ObjectResult;
+            //var advertiser = service.GetAdvertiser(param).Execute().ObjectResult;
+            //var affiliate = service.GetAffiliate(param).Execute().ObjectResult;
+            var service = new AdvertiserCampaignsService();
+            var result = service.GetCampaingsForAdvertiser(33).Execute().ObjectResult;
+
         }
     }
 }

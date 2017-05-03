@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Invoca.Core.Exceptions
 {
-    class InvocaClientException : Exception
+    public class InvocaClientException : Exception
     {
         public InvocaClientException()
         {

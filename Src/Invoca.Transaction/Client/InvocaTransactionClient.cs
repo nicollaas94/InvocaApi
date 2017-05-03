@@ -11,11 +11,11 @@ using Invoca.Core;
 
 namespace Invoca.Transaction.Client
 {
-    class InvocaClient<T> : IInvocaClient<T> where T: new()
+    class InvocaTransactionClient<T> : IInvocaClient<T> where T: new()
     {
         private IInvocaService service;
 
-        internal InvocaClient(IInvocaService service)
+        internal InvocaTransactionClient(IInvocaService service)
         {
             this.service = service;
         }
@@ -24,7 +24,7 @@ namespace Invoca.Transaction.Client
         {
             var config = Bootstrap.GetConfig();
 
-            var client = new RestClient(new Uri(config.Url, service.Url));
+            var client = new RestClient(new Uri(config.Url(true), service.Url));
 
             var request = new RestRequest((RestSharp.Method)service.RequestType);
 

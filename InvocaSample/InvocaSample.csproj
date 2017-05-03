@@ -53,6 +53,10 @@
       <Project>{feb5cba2-68ff-441d-be1f-6751039cc999}</Project>
       <Name>Invoca.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Src\Invoca.Network\Invoca.Network.csproj">
+      <Project>{ac94af49-f1ed-4d3d-92d1-3e19dc358e17}</Project>
+      <Name>Invoca.Network</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Src\Invoca.Transaction\Invoca.Transaction.csproj">
       <Project>{b3a7b97d-947e-4b0b-933f-3fdad9224dc5}</Project>
       <Name>Invoca.Transaction</Name>

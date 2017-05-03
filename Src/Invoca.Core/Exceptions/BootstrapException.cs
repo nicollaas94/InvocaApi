@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Invoca.Core.Exceptions
 {
-    class BootstrapException : Exception
+    public class BootstrapException : Exception
     {
         public BootstrapException()
         {
