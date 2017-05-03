@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Invoca.Model
+namespace Invoca.Core.Model
 {
     public class QueryParameters
     {

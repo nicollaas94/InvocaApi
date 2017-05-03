@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using Invoca.Services;
+using Invoca.Core.Client;
+using Invoca.Core;
 
-namespace Invoca.Client
+namespace Invoca.Transaction.Client
 {
     class InvocaSoapClientMock<T> : IInvocaClient<T> where T : new()
     {

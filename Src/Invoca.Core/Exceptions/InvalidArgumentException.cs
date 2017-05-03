@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Invoca.Exceptions
+namespace Invoca.Core.Exceptions
 {
     class InvalidArgumentException : Exception
     {

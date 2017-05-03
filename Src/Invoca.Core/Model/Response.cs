@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Invoca.Model
+namespace Invoca.Core.Model
 {
     public class Response
     {

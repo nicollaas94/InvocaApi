@@ -1,13 +1,11 @@
-﻿using Invoca.Model;
-using Invoca.Client;
-using RestSharp;
-using System;
+﻿using Invoca.Transaction.Client;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Invoca.Core;
+using Invoca.Core.Services;
+using Invoca.Core.Client;
+using Invoca.Core.Model;
 
-namespace Invoca.Services
+namespace Invoca.Transaction.Services
 {
     public class NetworksService : IInvocaService
     {
@@ -23,7 +21,7 @@ namespace Invoca.Services
             this.Url = $"networks/transactions/{Bootstrap.GetConfig().NetworkId}.json";
             RequestType = Method.GET;
             this.Parameters = np;
-            return InvocaClientFactory.CreateSoap<List<Response>>(this);
+            return InvocaClientFactory.CreateClient<List<Response>>(this);
         }
 
     }

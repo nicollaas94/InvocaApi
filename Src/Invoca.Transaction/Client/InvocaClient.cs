@@ -1,18 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Net;
-using System.Text;
 using System.Threading.Tasks;
-using Invoca.Services;
 using RestSharp;
 using System.Net.Http;
-using Invoca.Exceptions;
-using System.Reflection;
-using RestSharp.Extensions.MonoHttp;
-using Invoca.Helpers;
+using Invoca.Core.Exceptions;
+using Invoca.Core.Helpers;
+using Invoca.Core.Services;
+using Invoca.Core.Client;
+using Invoca.Core;
 
-namespace Invoca.Client
+namespace Invoca.Transaction.Client
 {
     class InvocaClient<T> : IInvocaClient<T> where T: new()
     {
@@ -29,9 +26,9 @@ namespace Invoca.Client
 
             var client = new RestClient(new Uri(config.Url, service.Url));
 
-            var request = new RestRequest(service.RequestType);
+            var request = new RestRequest((RestSharp.Method)service.RequestType);
 
-            if(service.RequestType == Method.GET || service.RequestType == Method.DELETE)
+            if(service.RequestType == Core.Services.Method.GET || service.RequestType == Core.Services.Method.DELETE)
             {
                 service.Parameters.GetType().GetProperties().ToList().ForEach(
                     p => 
@@ -41,7 +38,7 @@ namespace Invoca.Client
                     });
                 request.AddQueryParameter("oauth_token", config.ApiKey);
             }
-            else if(service.RequestType == Method.POST || service.RequestType == Method.PUT)
+            else if(service.RequestType == Core.Services.Method.POST || service.RequestType == Core.Services.Method.PUT)
             {
                 request.AddJsonBody(service.Parameters);
             }

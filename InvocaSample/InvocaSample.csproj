@@ -49,13 +49,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Src\Invoca.Model\Invoca.Model.csproj">
-      <Project>{f4d97d43-fe5d-4d22-b2a7-c8e580faab1c}</Project>
-      <Name>Invoca.Model</Name>
+    <ProjectReference Include="..\Src\Invoca.Core\Invoca.Core.csproj">
+      <Project>{feb5cba2-68ff-441d-be1f-6751039cc999}</Project>
+      <Name>Invoca.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Src\Invoca\Invoca.csproj">
+    <ProjectReference Include="..\Src\Invoca.Transaction\Invoca.Transaction.csproj">
       <Project>{b3a7b97d-947e-4b0b-933f-3fdad9224dc5}</Project>
-      <Name>Invoca</Name>
+      <Name>Invoca.Transaction</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

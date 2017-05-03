@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Invoca
+namespace Invoca.Core
 {
     public class InvocaApiConfig
     {

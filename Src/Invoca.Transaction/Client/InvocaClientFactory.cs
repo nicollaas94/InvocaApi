@@ -1,15 +1,13 @@
-﻿using Invoca.Services;
+﻿using Invoca.Core;
+using Invoca.Core.Client;
+using Invoca.Core.Services;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Invoca.Client
+namespace Invoca.Transaction.Client
 {
     class InvocaClientFactory
     {
-        internal static IInvocaClient<T> CreateSoap<T>(IInvocaService service) where T : new()
+        internal static IInvocaClient<T> CreateClient<T>(IInvocaService service) where T : new()
         {
             var config = Bootstrap.GetConfig();
 
