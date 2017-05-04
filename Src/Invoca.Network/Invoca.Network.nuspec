@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Invoca.Network</id>
+    <version>0.0.1-alfa</version>
+    <title>$title$</title>
+    <authors>Nicollas Braga</authors>
+    <owners>Nicollas Braga</owners>
+    <licenseUrl>https://github.com/nicollaas94/InvocaApi/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/nicollaas94/InvocaApi</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Implement Services for Invoca Network</description>
+    <releaseNotes>Implement Services for Invoca Network</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>InvocaApi Invoca Invoca.Network InvocaNetowrk</tags>
+  </metadata>
+</package>
