@@ -5,6 +5,7 @@ using Invoca.Core.Client;
 using Invoca.Core;
 using Invoca.Core.Model;
 using Invoca.Core.Model.Network;
+using Invoca.Core.Model.Network.QuickStats;
 
 namespace Invoca.Network.Services
 {
@@ -18,7 +19,6 @@ namespace Invoca.Network.Services
         public IInvocaClient<List<AdvertiserCampaingResponse>> GetCampaingsForAdvertiser(int advertiserId)
         {
             this.Url = $"{Bootstrap.GetConfig().NetworkId}/advertisers/{advertiserId}/advertiser_campaigns.json";
-            // this.Parameters = parameter;
             RequestType = Method.GET;
             return InvocaClientFactory.CreateClient<List<AdvertiserCampaingResponse>>(this);
         }
@@ -26,9 +26,15 @@ namespace Invoca.Network.Services
         public IInvocaClient<AdvertiserCampaingResponse> GetSpecifcCampaingForAdvertiser(int advertiserId,int campaingId)
         {
             this.Url = $"{Bootstrap.GetConfig().NetworkId}/advertisers/{advertiserId}/advertiser_campaigns/{campaingId}.json";
-            // this.Parameters = parameter;
             RequestType = Method.GET;
             return InvocaClientFactory.CreateClient<AdvertiserCampaingResponse>(this);
+        }
+
+        public IInvocaClient<AdvertiserQuickStatsResponse> GetQuickStats(int advertiserIdFromNetwork, int advertiserCampaignIdFromNetwork)
+        {
+            this.Url = $"{Bootstrap.GetConfig().NetworkId}/advertisers/{advertiserIdFromNetwork}/advertiser_campaigns/{advertiserCampaignIdFromNetwork}/quick_stats.json";
+            RequestType = Method.GET;
+            return InvocaClientFactory.CreateClient<AdvertiserQuickStatsResponse>(this);
         }
     }
 }

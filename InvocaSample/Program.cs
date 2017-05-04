@@ -16,6 +16,7 @@ namespace InvocaSample
                 AdvertiserId = 33,
                 AffiliateId = 33,
                 Subdomain = "mynetwork",
+                Version = "2017-02-01",
                 Mode = Invoca.Core.InvocaApiMode.Production
             });
 
@@ -26,9 +27,11 @@ namespace InvocaSample
             //var network = service.GetNetwork(param).Execute().ObjectResult;
             //var advertiser = service.GetAdvertiser(param).Execute().ObjectResult;
             //var affiliate = service.GetAffiliate(param).Execute().ObjectResult;
-            var service = new AdvertiserCampaignsService();
-            var result = service.GetCampaingsForAdvertiser(33).Execute().ObjectResult;
-
+            // var service = new AdvertiserCampaignsService();
+            // var result = service.GetCampaingsForAdvertiser(33).Execute().ObjectResult;
+            // var result = service.GetQuickStats(33, 33).Execute().ObjectResult;
+            var service = new PromoNumbersService();
+            var result = service.GetAllAdvertiserPromoNumbers(33, 33).Execute().ObjectResult;
         }
     }
 }

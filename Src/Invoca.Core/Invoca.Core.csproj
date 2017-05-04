@@ -62,6 +62,11 @@
     <Compile Include="Model\Network\NamedRegion.cs" />
     <Compile Include="Model\Network\PeriodicCallCapAlert.cs" />
     <Compile Include="Model\Network\Policy.cs" />
+    <Compile Include="Model\Network\PromoNumbers\CustomData.cs" />
+    <Compile Include="Model\Network\PromoNumbers\PromoNumbersResponse.cs" />
+    <Compile Include="Model\Network\QuickStats\AdvertiserQuickStatsResponse.cs" />
+    <Compile Include="Model\Network\QuickStats\Stats.cs" />
+    <Compile Include="Model\Network\QuickStats\StatsValue.cs" />
     <Compile Include="Model\Network\Region.cs" />
     <Compile Include="Model\Network\Root.cs" />
     <Compile Include="Model\QueryParameters.cs" />
