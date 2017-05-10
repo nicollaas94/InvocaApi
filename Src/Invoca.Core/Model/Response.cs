@@ -143,6 +143,11 @@ namespace Invoca.Core.Model
         public string CallFeeLocalized { get; set; }
 
         /// <summary>
+        /// Caller ID | Caller ID. Formatted as 12 characters like 866-555-1234
+        /// </summary>
+        public string CallingPhoneNumber { get; set; }
+
+        /// <summary>
         /// Call Result	| Status of the transaction
         /// </summary>
         public string CallResultDescriptionDetail { get; set; }
@@ -151,12 +156,6 @@ namespace Invoca.Core.Model
         /// Source | Source of the transaction
         /// </summary>
         public string CallSourceDescription { get; set; }
-
-        /// <summary>
-        /// Caller ID | Caller ID. Formatted as 12 characters like 866-555-1234
-        /// </summary>
-        public string CallingPhoneNumber { get; set; }
-
         // --- 
 
         /// <summary>
@@ -175,11 +174,6 @@ namespace Invoca.Core.Model
         /// City | City where transaction originated
         /// </summary>
         public string City { get; set; }
-
-        /// <summary>
-        /// Recording | URL to the call recording, if available
-        /// </summary>
-        public string Recording { get; set; }
 
         /// <summary>
         /// Call Record ID |
@@ -262,7 +256,7 @@ namespace Invoca.Core.Model
         /// AdWords Keyword Match Type	| The match type for the Keyword
         /// </summary>
         public string DynamicNumberPoolReferrerKeywordMatchType { get; set; }
-        
+
         /// <summary>
         /// Pool Param Name | The name for parameter
         /// </summary>
@@ -600,6 +594,10 @@ namespace Invoca.Core.Model
         /// </summary>
         public string QuantityList { get; set; }
 
+        /// <summary>
+        /// Recording | URL to the call recording, if available
+        /// </summary>
+        public string Recording { get; set; }
         /// <summary>
         /// Region	Region (state, province or country) | where transaction originated
         /// </summary>
