@@ -36,7 +36,7 @@ namespace Invoca.Core.Model.Network.Advertiser
         /// <summary>
         ///  array of hashes	1 or more pairs of id_from_network [and name].
         /// </summary>
-        public IList<Site> Sites { get; set; }
+        public List<Site> Sites { get; set; }
 
         /// <summary>
         /// string (required)	The name of the Advertiser. Unique within network.
@@ -46,7 +46,7 @@ namespace Invoca.Core.Model.Network.Advertiser
         /// <summary>
         /// array of hashes	0 or more users for the organization.
         /// </summary>
-        public IList<User> Users { get; set; }
+        public List<User> Users { get; set; }
 
         /// <summary>
         /// integer
