@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Invoca.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Invoca.Core.0.0.1-alfa\lib\net452\Invoca.Core.dll</HintPath>
+    </Reference>
     <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\RestSharp.105.2.3\lib\net452\RestSharp.dll</HintPath>
     </Reference>
@@ -49,12 +52,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\PromoNumbersService.cs" />
     <Compile Include="Services\AdvertiserCampaignsService.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Invoca.Core\Invoca.Core.csproj">
-      <Project>{feb5cba2-68ff-441d-be1f-6751039cc999}</Project>
-      <Name>Invoca.Core</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
