@@ -49,6 +49,9 @@
     <Compile Include="InvocaApiConfig.cs" />
     <Compile Include="Model\Network\AdvertiserCampaingResponse.cs" />
     <Compile Include="Model\Network\AdvertiserPayin.cs" />
+    <Compile Include="Model\Network\Advertiser\AdvertiserResponse.cs" />
+    <Compile Include="Model\Network\Advertiser\Site.cs" />
+    <Compile Include="Model\Network\Advertiser\User.cs" />
     <Compile Include="Model\Network\AffiliatePayout.cs" />
     <Compile Include="Model\Network\BudgetActivities.cs" />
     <Compile Include="Model\Network\BudgetCapAlert.cs" />
