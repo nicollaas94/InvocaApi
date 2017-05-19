@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Invoca.Core
 {
@@ -43,9 +39,9 @@ namespace Invoca.Core
         /// <summary>
         /// Mode
         /// </summary>
-        public InvocaApiMode Mode { get; set; }
+        public InvocaApiMode Mode { get; set; } = InvocaApiMode.Production;
 
-        public string Version { get; set; } = "2016-10-01";
+        public string Version { get; set; } = "2017-02-01";
     }
 
     public enum InvocaApiMode

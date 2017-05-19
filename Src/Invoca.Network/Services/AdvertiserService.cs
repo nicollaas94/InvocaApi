@@ -22,11 +22,11 @@ namespace Invoca.Network.Services
             return InvocaClientFactory.CreateClient<List<AdvertiserResponse>>(this);
         }
 
-        public IInvocaClient<AdvertiserCampaingResponse> GetSpecifcAdvertiser(int advertiserIdFromNetwork)
+        public IInvocaClient<AdvertiserResponse> GetSpecifcAdvertiser(int advertiserIdFromNetwork)
         {
             this.Url = $"{Bootstrap.GetConfig().NetworkId}/advertisers/{advertiserIdFromNetwork}.json";
             RequestType = Method.GET;
-            return InvocaClientFactory.CreateClient<AdvertiserCampaingResponse>(this);
+            return InvocaClientFactory.CreateClient<AdvertiserResponse>(this);
         }
     }
 }

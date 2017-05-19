@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Invoca.Core.Model.Network
+namespace Invoca.Core.Model.Network.Advertiser.Campaigns
 {
-    public class PeriodicCallCapAlert
+    public class BudgetCapAlert
     {
         public double BudgetAmount { get; set; }
         public string BudgetCurrency { get; set; }

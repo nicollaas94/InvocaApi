@@ -1,4 +1,4 @@
-﻿namespace Invoca.Core.Model.Network
+﻿namespace Invoca.Core.Model.Network.Advertiser.Campaigns
 {
     public class CustomData
     {

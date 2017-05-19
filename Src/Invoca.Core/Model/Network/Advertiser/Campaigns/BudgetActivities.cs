@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Invoca.Core.Model.Network
+namespace Invoca.Core.Model.Network.Advertiser.Campaigns
 {
     public class BudgetActivities
     {

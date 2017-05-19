@@ -6,6 +6,7 @@ using Invoca.Core;
 using Invoca.Core.Model;
 using Invoca.Core.Model.Network;
 using Invoca.Core.Model.Network.QuickStats;
+using Invoca.Core.Model.Network.Advertiser.Campaigns;
 
 namespace Invoca.Network.Services
 {
